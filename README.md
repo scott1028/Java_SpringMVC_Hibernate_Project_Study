@@ -1,6 +1,6 @@
 # Config
 
-    update src/main/java/hibernate.cfg.xml username:password of your DataBase
+    update mvc-dispatcher-servlet.xml username:password of your DataBase
     
 # Test
 

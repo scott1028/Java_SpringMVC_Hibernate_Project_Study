@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.springapp.mvc.AuditLogEntity" table="audit_log" schema="" catalog="ssd_data">
+        <id name="id">
+            <column name="id" sql-type="int" not-null="true"/>
+        </id>
+        <property name="auditId">
+            <column name="Audit_ID" sql-type="varchar" length="24" not-null="true"/>
+        </property>
+        <property name="auditName">
+            <column name="Audit_Name" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="auditType">
+            <column name="Audit_Type" sql-type="varchar" length="10" not-null="true"/>
+        </property>
+        <property name="parmeter01">
+            <column name="Parmeter01" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter02">
+            <column name="Parmeter02" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter03">
+            <column name="Parmeter03" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter04">
+            <column name="Parmeter04" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter05">
+            <column name="Parmeter05" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter06">
+            <column name="Parmeter06" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter07">
+            <column name="Parmeter07" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter08">
+            <column name="Parmeter08" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter09">
+            <column name="Parmeter09" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="parmeter10">
+            <column name="Parmeter10" sql-type="varchar" length="50" not-null="true"/>
+        </property>
+        <property name="logDetail">
+            <column name="Log_Detail" sql-type="longtext" length="2147483647" not-null="true"/>
+        </property>
+        <property name="createUser">
+            <column name="Create_User" sql-type="varchar" length="50"/>
+        </property>
+        <property name="createDate">
+            <column name="Create_Date" sql-type="datetime"/>
+        </property>
+    </class>
+</hibernate-mapping>
